@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: whitesmoke;
     padding: 10px 0;
 }
@@ -19,7 +19,7 @@ body{
     box-shadow: 0 0 15px black;
 }
 
-.display{
+.display {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -33,10 +33,15 @@ body{
     border-radius: 5px;
 }
 
-.calculator-buttons{
+.calculator-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 8px;
+}
+
+#operacaoComNumeroComplexo:focus {
+    background: #f4d9a8;
+    color: black;
 }
 
 .container-buttons {
@@ -44,7 +49,7 @@ body{
     grid-gap: 10px;
 }
 
-.calculator button{
+.calculator button {
     background-color: rgb(100, 100, 100);
     color: white;
     padding: 15px;
@@ -55,25 +60,25 @@ body{
     border: 2px solid black;
 }
 
-button:hover{
+button:hover {
     background-color: #d1ba90;
     color: black;
 }
 
-button:active{
+button:active {
     background-color: #f4d9a8;
     color: black;
 }
 
-@media(max-width: 780px){
+@media(max-width: 780px) {
     .calculator {
         width: 70%;
         height: 90%;
     }
 }
 
-@media (max-width: 560px){
-    .calculator button{
+@media (max-width: 560px) {
+    .calculator button {
         padding: 8px;
     }
 
